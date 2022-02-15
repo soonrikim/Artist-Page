@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/discography.css" rel="stylesheet" type="text/css" />
+    <title>DOKU-EN-KAI</title>
+
+    <style type="text/css">
+      body {
+        overflow: auto;
+      }
+      body::before {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-image: url("images/cut_dvd.jpg");
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        transform: scale(1.02);
+        z-index: -1;
+        content: "";
+      }
+
+      .content-text {
+        width: 50%;
+        padding: 0 0 0 200px;
+        text-align: left;
+        line-height: 3em;
+        color: lavender;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .wrapper {
+        width: 960px;
+        padding: 66px 0px;
+        margin: 0 auto;
+        display: fixed;
+        justify-content: space-between;
+        background-color: rgba(153, 126, 144, 0.8);
+      }
+      .content-img img {
+        width: 80%;
+        float: right;
+        padding: 105px 45px;
+      }
+
+      .content-wrapper {
+        width: 100%;
+        padding: 0px 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .content-text {
+        padding: 0 0 0 128px;
+      }
+
+      .content-text h2 {
+        padding: 0 0 0 20px;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- メインコンテンツ -->
+    <div class="wrapper">
+      <div class="content-wrapper">
+        <article class="content-wrapper">
+          <div class="content-text">
+            <h2>Cut dvd</h2>
+            <ol>
+              <li>Run For Word</li>
+              <li>I Dance Alone</li>
+              <li>エソテリック</li>
+              <li>孤独の発明</li>
+              <li>向こう岸が視る夢</li>
+              <li>Long Tomorrow</li>
+              <li>The Future Is Now</li>
+              <li>グッドバイ</li>
+              <li>New Sentimentality</li>
+              <li>Past And Language</li>
+              <li>Path</li>
+            </ol>
+          </div>
+          <div class="content-img">
+            <img
+              src="/images/cut_dvd.jpg"
+              alt="ガッチャマンイントロダクションイメージ1"
+            />
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

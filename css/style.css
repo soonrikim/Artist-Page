@@ -1,0 +1,405 @@
+/*****共通部分
+***********************************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: “游ゴシック体“, YuGothic, “游ゴシック Medium”, “Yu Gothic Medium”, “游ゴシック“, “Yu Gothic”, sans-serif;
+  background: url(../images/black.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+}
+
+
+
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #dedede;
+}
+
+.title-container h1,p{
+  padding: 14px;
+  text-align: center;
+  text-shadow: 4px 2px 2px grey;
+  
+}
+.title-container p {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.wrapper {
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  
+}
+/*****メインビジュアル*****/
+#w3-content-w3-section{
+  width: 3000px;
+  height: 2000px;
+}
+#w3-content-w3-section img{
+width: 100%;
+height: 100%;
+}
+.mySlides {display:none;}
+
+
+/*****ヘーダ*****/
+
+
+
+#menu{
+  margin: 0;
+  width:100%;
+  height:50px;
+  position:fixed;
+  box-align:center;top:0;left:0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+ul:after{
+  content:'';
+  display: block;
+  clear:both;
+}
+
+#logo{
+  font-style: italic;
+  color: #111;
+  
+  
+}
+
+#span{
+  color: #fff;
+}
+
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 35px;
+  text-decoration: none;
+  list-style: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+/*****メインコンテンツ*****/
+.discography{
+  margin: 300px 0 80px;;
+  text-align: center;
+
+
+}
+
+
+.article_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  row-gap: 104px;
+  margin-bottom: 350px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9;
+  
+}
+
+.section_top{
+  position:relative;
+  transition: .5s ease;
+}
+.section_top:hover {
+  opacity:0.7;
+ }
+
+ .section_top:hover .section-text {
+  visibility:visible;
+}    
+
+.section-img img{
+  width: 304px;
+  position:relative;
+  text-align: center;
+  
+}
+.section-text {
+  position:absolute;
+  color: #111;
+  visibility:hidden;
+  bottom: 0;
+  width: 100%;
+  border-style: solid; 
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/*팝업창*/
+#popup {
+  display: none; /*숨기기*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+
+#popmenu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  background: #fff;
+}
+
+#popmenu p {
+  margin-top: 80px;
+}
+
+.exit {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%,0);
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #007AAE;
+  cursor: pointer;
+}
+
+.biography-title{
+  margin: 10px 0 80px;;
+  text-align: center;
+
+
+}
+
+.biography {
+  margin: 10px 0 80px;;
+  text-align: center;
+}
+.biography p {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+
+
+#entry-title {
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: 50px;
+}
+.entry-wrapper{
+  width: 100%;
+  height: 100%;
+  padding: 80px 0px;
+
+  
+}
+.left{
+  width: 50%;
+  float: left;
+  background-color: rgb(219, 24, 24);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+.right{
+  width: 50%;
+  float: right;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+
+}
+.entry-area {
+  width: 500px;
+  padding: 80px 0px;
+  height: 295px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.entry-area:hover {
+  opacity:0.3;
+   
+  }
+  
+.entry-image{
+ width: 100%;
+ padding: 0;
+ justify-content: end;
+
+}
+
+.entry-text {
+ width: 100%;
+ padding: 0;
+ float: left;
+
+}
+
+
+.scheduel {
+  margin-top: 100px;
+}
+
+.scheduel-header {
+  text-align: center;
+  margin-top: 1200px;
+  margin-bottom: 140px;
+}
+
+.scheduel-content {
+  text-align: center;
+  margin-bottom: 225px;
+  font-size: 20px;
+}
+
+/** footer**/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+.fix {
+  position:fixed;
+  animation: down 0.5s ease
+}
+
+@keyframes down {
+  0%{
+    transform: translateY(-50px)
+  }
+  100%{
+    transform: translateY(0px)
+  }
+}
+

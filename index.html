@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toe</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+        $('a').click(function () {
+          $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+          }, 600);
+          return false;
+        });
+      </script>
+</head>
+
+<body>
+    <!--wrapper-->
+    <div class="wrapper">
+        <!-- Header -->
+        <!-- Menu -->
+        <header>
+            <nav id="menu">
+                <a id="Top" name="Top"></a>
+                <ul class="links">
+                    <li><a href="#scheduel-header">SCHEDUEL</a></li>
+                    <li><a href="#ttl-border">SPECIAL</a></li>
+                    <li><a href="#bio">BIOGRAPHY</a></li>
+                    <li><a href="#article_top">DISCOGRAPHY</a></li>
+                    <li><a class="active" href="#container">Top</a></li>
+                    <li style="float:left;"><a href="index.html" id="logo">
+                            <div
+                                style="border: 0px solid white; background-color: white; padding: 0px 10px; font-size: 15px;">
+                                <strong>Toe</strong>
+                            </div>
+
+                </ul>
+                
+            </nav>
+        </header>
+
+
+
+        <!-- Banner -->
+        <a id="container" name="container"></a>
+        <div class="container">
+            <div class="title-container">
+                <h1>Post-Rock Band</h1>
+                <p>Toe・トー</p>
+            </div>
+            <div class="w3-content-w3-section" style="max-width:1200px">
+                <img class="mySlides" src="./images/main.jpg" style="width:1197px ;height: 798px;">
+                <img class="mySlides" src="./images/slide2.jpg" style="width:1197px; height: 798px;">
+                <img class="mySlides" src="./images/slide3.jpg" style="width:1197px; height: 798px;">
+              </div>
+              
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 3000); // Change image every 2 seconds
+              }
+              </script>
+
+        </div>
+        <!-- Main -->
+        <a id="article_top" name="article_top"></a>
+        <h2 class="discography">DISCOGRAPHY・ディスコグラピー</h2>
+        <article class="article_top">
+            <section class="section_top">
+                <a href="DOKU-EN-KAI.html" target="_self">
+                    <div class="section-img">
+                        <img src="./images/DOKU-EN-KAI.jpg" alt="DOKU-EN-KAI">
+                        <div class="section-text">
+                            <h1>DOKU-EN-KAI</h1>
+                            <p>最新のリリス・アルバム</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="section_top">
+                <a href="Our Latest Number.html" target="_self">
+                    <div class="section-img">
+                        <img src="./images/Our Latest Number.jpg" alt="Our Latest Number">
+                    </div>
+                    <div class="section-text">
+                        <h1>Our Latest Number</h1>
+                        <p>2018・アルバム</p>
+                    </div>
+                </a>
+            </section>
+
+
+            <section class="section_top">
+                <a href="That's another story.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/thats-another-story.jpg" alt="That's another story">
+                </div>
+                <div class="section-text">
+                    <h1>That's another story</h1>
+                    <p>2018・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+
+            <section class="section_top">
+                <a href="Hear You.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/Hear You.jpg" alt="Hear You">
+                </div>
+                <div class="section-text">
+                    <h1>Hear You</h1>
+                    <p>2015・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+
+
+
+            <section class="section_top">
+                <a href="The Future is Now.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/the-future-is-now-ep-us-10inch-vinyl-toe.jpg" alt="The Future is Now">
+                </div>
+                <div class="section-text">
+                    <h1>The Future is Now</h1>
+                    <p>2013・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+            <section class="section_top">
+                <a href="The Future is Now.2.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/The Future is Now.jpg" alt="The Future is Now">
+                </div>
+                <div class="section-text">
+                    <h1>The Future is Now.2</h1>
+                    <p>2012・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+
+            <section class="section_top">
+                <a href="Cut dvd.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/cut_dvd.jpg" alt="The Future is Now">
+                </div>
+                <div class="section-text">
+                    <h1>Cut dvd</h1>
+                    <p>2010・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+            <section class="section_top">
+                <a href="For long Tomorrow.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/For long Tomorrow.jpg" alt="For long Tomorrow">
+                </div>
+                <div class="section-text">
+                    <h1>For long Tomorrow</h1>
+                    <p>2009・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+
+            <section class="section_top">
+                <a href="Collection of colonies of bees split.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/collection of colonies of bees split.jpg" alt="For long Tomorrow">
+                </div>
+                <div class="section-text">
+                    <h1>Collection of colonies <br>of bees split</h1>
+                    <p>2009・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+
+            <section class="section_top">
+                <a href="New Sentimentality.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/New Sentimentality.jpg" alt="New Sentimentality">
+                </div>
+                <div class="section-text">
+                    <h1>New Sentimentality</h1>
+                    <p>2006・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+
+
+
+
+
+            <section class="section_top">
+                <a href="The book about my idle plot on a vague anxiety.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/the book about my idle plot on a vague anxiety.jpg"
+                        alt="the book about my idle plot on a vague anxiety">
+                </div>
+                <div class="section-text">
+                    <h1>The book about my idle <br>plot on a vague anxiety</h1>
+                    <p>2005・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+            <section class="section_top">
+                <a href="Va. Rock motown.html" target="_self">
+                <div class="section-img">
+                    <div class="section-img">
+                        <img src="./images/va.rockmotown.jpg" alt="the book about my idle plot on a vague anxiety">
+                    </div>
+                    <div class="section-text">
+                        <h1>Va. Rock motown</h1>
+                        <p>2005・アルバム</p>
+                    </div>
+                </a>
+            </section>
+
+
+
+            <section class="section_top">
+                <a href="Va.noon recs.compilation.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/va.noon recs.compilation vol 1.jpg" alt="songs, ideas we forgot">
+                </div>
+                <div class="section-text">
+                    <h1>Va.noon recs.compilation <br>vol 1</h1>
+                    <p>2002・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+            <section class="section_top">
+                <a href="Pele.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/pele.jpg" alt="songs, ideas we forgot">
+                </div>
+                <div class="section-text">
+                    <h1>Pele</h1>
+                    <p>2002・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+            <section class="section_top">
+                <a href="Songs, ideas we forgot.html" target="_self">
+                <div class="section-img">
+                    <img src="./images/songs, ideas we forgot.jpg" alt="songs, ideas we forgot">
+                </div>
+                <div class="section-text">
+                    <h1 style="font-size: 25px;">Songs, ideas we forgot</h1>
+                    <p>2002・アルバム</p>
+                </div>
+            </a>
+            </section>
+
+
+        </article>
+        
+        <a id="bio" name="バイオ"></a>
+        <h2 class="biography-title">BIOGRAPHY・バイオグラフィ</h2>
+        <div class="biography">
+            <img src="./images/biography.jpg" alt="biography">
+            <P>
+                toeはドラムの樫倉隆(たか)史(し)さん，ギターの美濃孝(たか)明(あき)さん<br>
+                ベースギターの山根智(さとし)さん，ギターの山崎博(ひろ)和(かず)さんで構成されている。
+            </P>
+            <P>
+                2000年の結成から今日に至るまで日本のポストロックシーンを牽引してきたのみならず<br>
+                数々の欧米ツアーを成功をさせるなど国内外で活躍している
+            </P>
+        </div>
+
+        <a id="ttl-border" name="ttl-border"></a>
+        <div class="entry-wrapper">
+            <h2 id="entry-title">
+                SPECIAL・スペシャル
+            </h2>
+            <div class="left">
+                <div class="entry-area">
+                    <div class="entry-image">
+                        <img src="./images/special1.png" alt="special1">
+                    </div>
+                    <div class="entry-text">OUR LATEST NUMBE CD</div>
+                </div>
+
+
+                <div class="entry-area">
+                    <div class="entry-image">
+                        <img src="./images/special2.png" alt="special2">
+                    </div>
+                    <div class="entry-text">HEAR YOU CD</div>
+                </div>
+
+                <div class="entry-area">
+                    <div class="entry-image">
+                        <img src="./images/special3.png" alt="special3">
+                    </div>
+                    <div class="entry-text">BOOK ABOUT MY IDLE PLOT ON A VAGUE ANXIETY Vinyl Record</div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="entry-area">
+                    <div class="entry-image">
+                        <img src="./images/DOKU EN KAI shirt-light gray.jpg" alt="special3">
+                    </div>
+                    <div class="entry-text">DOKU EN KAI shirt-light gray</div>
+                </div>
+
+                <div class="entry-area">
+                    <div class="entry-image">
+                        <img src="./images/toe Logo Tee.jpg" alt="special3">
+                    </div>
+                    <div class="entry-text">toe Logo Tee</div>
+                </div>
+
+                <div class="entry-area">
+                    <div class="entry-image">
+                        <img src="./images/Testamentary Occasional Eudemonism Shirt.jpg" alt="special3">
+                    </div>
+                    <div class="entry-text">Testamentary Occasional Eudemonism Shirt</div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="scheduel">
+            <a id="scheduel-header" name="scheduel-header"></a>
+            <h2 class="scheduel-header">SCHEDUEL・スケージュル
+            </h2>
+            <div class="scheduel-content">
+                <h3>2021.04.23 Posted</h3>
+                <p>2021.05.29 Sat. - 30 Sun. "FFKT 2021 中止"</p>
+                <br><br>
+                <h3>2021.04.22 Posted</h3>
+                <p>2021.06.11 Fri. - 13 Sun. "森、道、市場2021"</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="https://www.facebook.com/toemusic"><i class="fa fa-facebook"></i></a>
+            <a href="https://toe-music.bandcamp.com/"><i class="fa fa-bandcamp"></i></a>
+            <a href="https://open.spotify.com/artist/0rpKM0MniNkXM1SLSglYUZ"><i class="fa fa-spotify"></i></a>
+            <a href="https://soundcloud.com/toe-official"><i class="fa fa-soundcloud"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p>Company Name &copy; 2015</p>
+        </div>
+
+    </footer>
+    </div>
+</body>
+
+</html>
